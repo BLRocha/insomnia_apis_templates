@@ -1,0 +1,288 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2024-01-04T17:46:05.140Z",
+  "__export_source": "insomnia.desktop.app:v8.5.1",
+  "resources": [
+    {
+      "_id": "req_ccbdc1e2dd2340889bb6ab6355c7e319",
+      "parentId": "wrk_ff26932eb0274009b491ac25e636736f",
+      "modified": 1704307934184,
+      "created": 1704307340569,
+      "url": "http://localhost/usuarios/entrar",
+      "name": "Login",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/x-www-form-urlencoded",
+        "params": [
+          {
+            "id": "pair_7607a320aab64845a1f2a9e4235e35c2",
+            "name": "email",
+            "value": "leandro@rocha.com",
+            "description": ""
+          },
+          {
+            "id": "pair_879aab766d16434b8be51c6acf2d4d96",
+            "name": "senha",
+            "value": "123456",
+            "description": ""
+          }
+        ]
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        },
+        { "name": "User-Agent", "value": "insomnia/8.5.1" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1704297149369,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_ff26932eb0274009b491ac25e636736f",
+      "parentId": null,
+      "modified": 1704390206190,
+      "created": 1704294586871,
+      "name": "SalsaGator Games Gateway Teste API XML",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_b11d4a8cab6e43168684684f3bc4252b",
+      "parentId": "wrk_ff26932eb0274009b491ac25e636736f",
+      "modified": 1704331200490,
+      "created": 1704297149269,
+      "url": "{{ _.baseUrl }}",
+      "name": "AccountDetails",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/xml",
+        "text": "<PKT>\n<Method Name=\"GetAccountDetails\">\n<Params>\n<Token Type=\"string\" Value=\"9e1132323c80638d8167bf20acf9dd0745407f5c9e453c8fc0224d6824b58e5e\" />\n<Hash Type=\"string\" Value=\"9e1132323c80638d8167bf20acf9dd0745407f5c9e453c8fc0224d6824b58e5e\" />\n</Params>\n</Method>\n</PKT>"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/xml" },
+        { "name": "User-Agent", "value": "insomnia/8.5.1" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1704297149269,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_65daf4de774647ab8c244b962eca632a",
+      "parentId": "wrk_ff26932eb0274009b491ac25e636736f",
+      "modified": 1704384282494,
+      "created": 1704306763273,
+      "url": "{{ _.baseUrl }}",
+      "name": "GetBalance",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/xml",
+        "text": "<PKT>\n<Method Name=\"GetBalance\">\n<Params>\n<Token Type=\"string\" Value=\"9e1132323c80638d8167bf20acf9dd0745407f5c9e453c8fc0224d6824b58e5e\" />\n<Hash Type=\"string\"\nValue=\"9e1132323c80638d8167bf20acf9dd0745407f5c9e453c8fc0224d6824b58e5e\" />\n</Params>\n</Method>\n</PKT>"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/xml" },
+        { "name": "User-Agent", "value": "insomnia/8.5.1" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1704286282560.625,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_09325b0565a84906a36b263e3fa05908",
+      "parentId": "wrk_ff26932eb0274009b491ac25e636736f",
+      "modified": 1704331210572,
+      "created": 1704306807165,
+      "url": "{{ _.baseUrl }}",
+      "name": "PlaceBet",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/xml",
+        "text": "<PKT>\n<Method Name=\"PlaceBet\">\n<Params>\n<Token Type=\"string\" Value=\"9e1132323c80638d8167bf20acf9dd0745407f5c9e453c8fc0224d6824b58e5e\" />\n<TransactionID Type=\"long\" Value=\"43211234\" />\n<BetReferenceNum Type=\"long\" Value=\"1234\" />\n<BetAmount Type=\"int\" Value=\"100\" />\n<GameReference Type=\"string\" Value=\"1221_124\" />\n<Hash Type=\"string\" Value=\"9e1132323c80638d8167bf20acf9dd0745407f5c9e453c8fc0224d6824b58e5e\" />\n</Params>\n</Method>\n</PKT>"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/xml" },
+        { "name": "User-Agent", "value": "insomnia/8.5.1" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1704253682435.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_59f53e5341ea47599483c56991ee915d",
+      "parentId": "wrk_ff26932eb0274009b491ac25e636736f",
+      "modified": 1704384742629,
+      "created": 1704306844659,
+      "url": "{{ _.baseUrl }}",
+      "name": "AwardWinning",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/xml",
+        "text": "<PKT>\n<Method Name=\"AwardWinnings\">\n<Params>\n<Token Type=\"string\" Value=\"9e1132323c80638d8167bf20acf9dd0745407f5c9e453c8fc0224d6824b58e5e\" />\n<TransactionID Type=\"long\" Value=\"43211234\" />\n<WinReferenceNum Type=\"long\" Value=\"1234\" />\n<WinAmount Type=\"int\" Value=\"100\" />\n<GameStatus Type=\"string\" Value=\"Complete\"/>\n<GameReference Type=\"string\" Value=\"1221_124\" />\n<Hash Type=\"string\" Value=\"9e1132323c80638d8167bf20acf9dd0745407f5c9e453c8fc0224d6824b58e5e\" />\n</Params>\n</Method>\n</PKT>"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/xml" },
+        { "name": "User-Agent", "value": "insomnia/8.5.1" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1704246437963.25,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_83a125fcfee44381849e07083404826a",
+      "parentId": "wrk_ff26932eb0274009b491ac25e636736f",
+      "modified": 1704384756961,
+      "created": 1704306859942,
+      "url": "{{ _.baseUrl }}",
+      "name": "RefundBet",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/xml",
+        "text": "<PKT>\n<Method Name=\"RefundBet\">\n<Params>\n<Token Type=\"string\" Value=\"9e1132323c80638d8167bf20acf9dd0745407f5c9e453c8fc0224d6824b58e5e\" />\n<TransactionID Type=\"long\" Value=\"43211234\" />\n<BetReferenceNum Type=\"long\" Value=\"1234\" />\n<RefundAmount Type=\"int\" Value=\"100\" />\n<GameReference Type=\"string\" Value=\"1221_124\" />\n<Hash Type=\"string\" Value=\"9e1132323c80638d8167bf20acf9dd0745407f5c9e453c8fc0224d6824b58e5e\" />\n</Params>\n</Method>\n</PKT>"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/xml" },
+        { "name": "User-Agent", "value": "insomnia/8.5.1" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1704242815727.125,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_92d2fbf1e43a4d2f8391a4f12758cdd7",
+      "parentId": "wrk_ff26932eb0274009b491ac25e636736f",
+      "modified": 1704331218555,
+      "created": 1704306879724,
+      "url": "{{ _.baseUrl }}",
+      "name": "ChangeNewToken",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/xml",
+        "text": "<PKT>\n<Method Name=\"ChangeGameToken\">\n<Params>\n<Token Type=\"string\" Value=\"9e1132323c80638d8167bf20acf9dd0745407f5c9e453c8fc0224d6824b58e5e\" />\n<NewGameReference Type=\"string\" Value=\"1221_124\" />\n<Hash Type=\"string\" Value=\"9e1132323c80638d8167bf20acf9dd0745407f5c9e453c8fc0224d6824b58e5e\" />\n</Params>\n</Method>\n</PKT>"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/xml" },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/8.5.1",
+          "id": "pair_78dc774527f047f4b73dad4079d2ee87"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1704242815627.125,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_2be29145ff344969b065b540a820aa66",
+      "parentId": "wrk_ff26932eb0274009b491ac25e636736f",
+      "modified": 1704294736977,
+      "created": 1704294586873,
+      "name": "Base Environment",
+      "data": { "baseUrl": "http://localhost/salsawebhook/" },
+      "dataPropertyOrder": { "&": ["baseUrl"] },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1704234243068,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_f9c5b278b4a7422bb383bfc693fdcb0c",
+      "parentId": "wrk_ff26932eb0274009b491ac25e636736f",
+      "modified": 1704386693022,
+      "created": 1704294586876,
+      "name": "Default Jar",
+      "cookies": [
+        {
+          "key": "ci_session",
+          "value": "6dh4gke08nv03r7cf2ososbj77qvjdep",
+          "expires": "2024-01-04T18:44:52.000Z",
+          "maxAge": 7200,
+          "domain": "localhost",
+          "path": "/",
+          "httpOnly": true,
+          "hostOnly": true,
+          "creation": "2024-01-03T18:43:24.430Z",
+          "lastAccessed": "2024-01-04T16:44:53.022Z",
+          "sameSite": "lax",
+          "id": "45a7a598-1920-41cd-8b4d-9858d5b61e8e"
+        }
+      ],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_4d1a96f616604bda85aeade8ac4569fe",
+      "parentId": "wrk_ff26932eb0274009b491ac25e636736f",
+      "modified": 1704294586890,
+      "created": 1704294586889,
+      "fileName": "CartelaCheia",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    }
+  ]
+}
